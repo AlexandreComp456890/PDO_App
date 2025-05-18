@@ -2,14 +2,14 @@
     $host = 'localhost';        
     $db   = 'cadastro';    
     $user = 'root';    
-    $pass = 'P0intBl4nk!';    
+    $pass = 'Sua senha';    
     
     $dsn = "mysql:host=$host;dbname=$db";  
     
     try {
         $pdo = new PDO($dsn, $user, $pass);
-        echo "Connected successfully!";
+        echo "Connected successfully!<br>";
     } catch (\PDOException $e) {
-        throw new \PDOException($e->getMessage(), (int)$e->getCode());
+        echo "Failed to connect. $e->getMessage()";
     }
 ?>
