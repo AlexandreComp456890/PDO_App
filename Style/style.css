@@ -1,0 +1,58 @@
+/* General style */
+*{
+    color: #ffffff;
+}
+
+body{
+    margin: 20px;
+    background-color: #1A1D21;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+h1,
+h2,
+h3{
+    text-align: center;
+    color: #ffffff;
+}
+
+td, 
+th {
+    color:rgb(0, 0, 0);
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+}
+
+tr {
+    background-color: #4c5767;
+}
+
+tr:nth-child(even),
+tr:nth-child(even) td {
+    color: #ffffff;
+    background-color: #2b323b;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    justify-content: left; 
+    align-items: left;     
+    margin: auto;
+    width: 99%;
+    padding: 20px;
+}
+
+input[type="text"],
+input[type = "email"]{
+    width:20%;
+    flex-direction: column;
+    padding: auto;
+    background-color: #4c5767;
+}
